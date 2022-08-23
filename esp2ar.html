@@ -28,6 +28,7 @@ var player = new Clappr.Player({
         mimeType: 'application/dash+xml',
         height: '100%',
         width: '100%',
+        autoPlay: 'cap',
         plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
         events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
         chromecast: {
